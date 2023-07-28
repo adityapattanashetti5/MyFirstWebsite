@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<title>Entertainment</title>
+<link rel="stylesheet" href="a.css">
+<style>
+	body {font-family: Verdana, sans-serif; font-size:0.9em;}
+header,nav, section,article,footer,figure
+{border:1px solid rgb(31, 69, 71); margin:5px; padding:8px;}
+nav ul {margin:0; padding:0;}
+	nav ul li {display:inline; margin:10px;}
+</style>
+<script>
+	function jfun2()
+	{
+		Maths=form1.t2.value;
+		English=form1.t3.value;
+	    Computer=form1.t4.value;
+        var m=parseInt(form1.t2.value)
+        var e=parseInt(form1.t3.value)
+        var c=parseInt(form1.t4.value)
+            if(m>e && m>c)
+            {
+            max=m
+            }
+            else if(e>m && e>c)
+            {
+            max=e
+            }
+            else
+            {
+            max=c
+            }
+            tmarks=m+e+c;
+form1.t5.value=tmarks
+form1.t6.value=tmarks/3
+            form1.t7.value=max;
+
+}
+</script>
+	</head>
+
+	<body onload="jfun2()">
+		<header style="background-image: url(./images/images.jpg);"><h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">ENTERTAINMENT</h1></header>
+			<nav style=background-color:azure;>
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Music.html">Muisc</a></li>
+					<li><a href="Sports.html">Sports</a></li>
+					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="Register.html">Registration</a></li>
+					<li><a href="Result.html">Result</a></li>
+					<li><a href="Contact.html">Contact us</a></li>
+				</ul>
+		</nav>
+		<section style="background-color:bisque;height: 400px;">
+            <center>
+                <div style="background-color:grey;width:max-content;">
+            <h2 style="background-color: rgb(240, 130, 13);">Student Marks</h2>
+        <form name="form1">
+<pre>
+Name<input type="text" placeholder="enter your name"><br>
+
+Maths <input type="text" name="t2" placeholder="enter marks"> English <input type="text" name="t3" placeholder="enter marks"> Computer <input type="Email" name="t4" placeholder="enter marks"><br>
+
+<div>Result:</div>
+Total Marks<input type="text" name="t5">       % Marks<input type="text" name="t6">       Max Marks<input type="text" name="t7">
+
+
+<input type=button value=Result onclick="jfun2()" style="background-color: rgb(44, 44, 181);">
+</pre>
+</form>
+        </div>
+	</center>
+		</section>
+		<footer style=background-color:lightgrey;> Developed by:Aditya</footer>
+	</body>
+</html>

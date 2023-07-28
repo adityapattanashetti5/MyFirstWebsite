@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<title>Entertainment</title>
+<link rel="stylesheet" href="a.css">
+<style>
+	body {font-family: Verdana, sans-serif; font-size:0.9em;}
+header,nav, section,article,footer,figure
+{border:1px solid rgb(31, 69, 71); margin:5px; padding:8px;}
+nav ul {margin:0; padding:0;}
+	nav ul li {display:inline; margin:10px;}
+</style>
+<!-- <style>
+    h2 {
+            text-shadow: 5px 5px 10px rgb(214, 227, 225), 10px 10px 20px rgb(234, 224, 226);
+        }
+      
+    </style> -->
+	<script>
+		function jfun1()
+		{
+			Name=form1.t1.value;
+			Designation=form1.t2.value;
+			Location=form1.t3.value;
+		    Email=form1.t4.value;
+			if(Name=="")
+			{
+				alert("Name can't be blank!!")
+				return false;
+				
+			}
+			else if(Designation=="")
+			{
+				alert("designation can't be blank!!")
+				return false;
+			}
+			else if(Location=="")
+			{
+				alert("location can't be blank!!")
+				return false;
+			}
+			else if(Email=="")
+			{
+				alert("email can't be blank!!")
+				return false;
+			}
+			else{
+				return true;
+				alert("Go ahead..")
+			}
+		}
+	</script>
+	</head>
+
+	<body>
+		<header style="background-image: url(./images/images.jpg);"><h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">ENTERTAINMENT</h1></header>
+			<nav style=background-color:azure;>
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Music.html">Muisc</a></li>
+					<li><a href="Sports.html">Sports</a></li>
+					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="Register.html">Registration</a></li>
+					<li><a href="Result.html">Result</a></li>
+					<li><a href="Contact.html">Contact us</a></li>
+				</ul>
+		</nav>
+		<section style="background-color:bisque;height: 400px;">
+         <!-- <center>
+                <div style="background-color:grey;border-radius:10px;width:30%;">
+            <h2 style="background-color: rgb(240, 130, 13);">Registration Page</h2>
+        <form name="form1" onsubmit="return jfun1()" action="thanks.html">
+            <pre style="font-size:large;">
+    Name        <input type="text" name="t1" placeholder="enter your name"><br>
+    Designation <input type="text" name="t2" placeholder="your designation"><br>
+    Location    <input type="text" name="t3" placeholder="your address"><br>
+    Email       <input type="Email" name="t4" placeholder="email address"><br>
+  <input type="submit" value="Register">
+            </pre>
+        </form>
+        </div>
+	</center> -->
+	
+		</section>
+		<footer style=background-color:lightgrey;> Developed by:Aditya</footer>
+	</body>
+</html>
